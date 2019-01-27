@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+@model IdentityDemo.ViewModels.LoginViewModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    @using (Html.BeginForm("Registe", "Login", FormMethod.Post))
+    {
+        <span>UserName:</span>
+        <input asp-for="UserName" />
+        <span>PassWord:</span>
+        <input asp-for="PassWorld" type="password" />
+        <button>Login</button>
+    }
+</body>
+</html>
